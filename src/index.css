@@ -96,6 +96,6 @@ code {
 @media screen and (max-width: 550px) {
   .pd  {
     font-size:3.7vw;
-    padding: 5px;
+    padding: 10px 5px;
   }
 }
