@@ -25,7 +25,6 @@ const getLocalStorageList = () =>{
     return[]
   }
 }
-
 const getLocalStorageArrayComplete = () =>{
   let arrayComplete = localStorage.getItem('ArrayComplete')
   if(arrayComplete){
@@ -35,7 +34,6 @@ const getLocalStorageArrayComplete = () =>{
     return[]
   }
 }
-
 const getLocalStorageArrayDelete = () =>{
   let arrayDelete = localStorage.getItem('arrayDelete')
   if(arrayDelete){
@@ -45,7 +43,6 @@ const getLocalStorageArrayDelete = () =>{
     return[]
   }
 }
-
 function App() {
 /*states*/
 const [name, setName] = useState("");
@@ -56,8 +53,6 @@ const [idTask, setIdTask] = useState('')
 const [arrayDelete, setarrayDelete] = useState(getLocalStorageArrayDelete())
 const [arrayComplete, setarrayComplete] = useState(getLocalStorageArrayComplete())
 /*functions*/
-
-
 
 const handleSubmit = (e) => {
     e.preventDefault() 
@@ -82,7 +77,6 @@ const handleSubmit = (e) => {
       setName("")
     }  
 }
-
 
 useEffect( ()=>{
   localStorage.setItem("list",JSON.stringify(list))
